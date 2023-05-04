@@ -1,0 +1,28 @@
+{
+  "name": "demo-esbuild",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:old": "esbuild app.jsx --bundle --outfile=out.js",
+    "build": "node build.mjs",
+    "lint:ts:check": "tsc -noEmit",
+    "dev": "serve ./public"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.11.1",
+    "react-router-dom": "^6.11.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.2",
+    "@types/react-dom": "^18.2.3",
+    "esbuild": "^0.17.18",
+    "eslint": "^8.39.0",
+    "eslint-prettier": "^0.0.0-empty",
+    "prettier": "^2.8.8",
+    "serve": "^14.2.0",
+    "typescript": "^5.0.4"
+  }
+}

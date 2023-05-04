@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "strict": true,
+    "target": "ESNext",
+    "useDefineForClassFields": false,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "isolatedModules": true
+  },
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}
