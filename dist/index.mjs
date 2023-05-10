@@ -1,8 +1,9 @@
 import {
   __commonJS,
   __toESM,
+  require_jsx_runtime,
   require_react
-} from "./chunk-3JPARA6K.mjs";
+} from "./chunk-AM32QR2C.mjs";
 
 // node_modules/scheduler/cjs/scheduler.development.js
 var require_scheduler_development = __commonJS({
@@ -476,9 +477,9 @@ var require_react_dom_development = __commonJS({
         if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
           __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
         }
-        var React5 = require_react();
+        var React4 = require_react();
         var Scheduler = require_scheduler();
-        var ReactSharedInternals = React5.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+        var ReactSharedInternals = React4.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
         var suppressWarning = false;
         function setSuppressWarning(newSuppressWarning) {
           {
@@ -527,7 +528,7 @@ var require_react_dom_development = __commonJS({
         var HostPortal = 4;
         var HostComponent = 5;
         var HostText = 6;
-        var Fragment2 = 7;
+        var Fragment3 = 7;
         var Mode = 8;
         var ContextConsumer = 9;
         var ContextProvider = 10;
@@ -1683,7 +1684,7 @@ var require_react_dom_development = __commonJS({
               return "DehydratedFragment";
             case ForwardRef:
               return getWrappedName$1(type, type.render, "ForwardRef");
-            case Fragment2:
+            case Fragment3:
               return "Fragment";
             case HostComponent:
               return type;
@@ -2083,7 +2084,7 @@ var require_react_dom_development = __commonJS({
           {
             if (props.value == null) {
               if (typeof props.children === "object" && props.children !== null) {
-                React5.Children.forEach(props.children, function(child) {
+                React4.Children.forEach(props.children, function(child) {
                   if (child == null) {
                     return;
                   }
@@ -3783,7 +3784,7 @@ var require_react_dom_development = __commonJS({
           /*                    */
           2
         );
-        var Update = (
+        var Update2 = (
           /*                       */
           4
         );
@@ -3831,7 +3832,7 @@ var require_react_dom_development = __commonJS({
           /*             */
           16384
         );
-        var LifecycleEffectMask = Passive | Update | Callback | Ref | Snapshot | StoreConsistency;
+        var LifecycleEffectMask = Passive | Update2 | Callback | Ref | Snapshot | StoreConsistency;
         var HostEffectMask = (
           /*               */
           32767
@@ -3875,10 +3876,10 @@ var require_react_dom_development = __commonJS({
         var BeforeMutationMask = (
           // TODO: Remove Update flag from before mutation phase by re-landing Visibility
           // flag logic (see #20043)
-          Update | Snapshot | 0
+          Update2 | Snapshot | 0
         );
-        var MutationMask = Placement | Update | ChildDeletion | ContentReset | Ref | Hydrating | Visibility;
-        var LayoutMask = Update | Callback | Ref | Visibility;
+        var MutationMask = Placement | Update2 | ChildDeletion | ContentReset | Ref | Hydrating | Visibility;
+        var LayoutMask = Update2 | Callback | Ref | Visibility;
         var PassiveMask = Passive | ChildDeletion;
         var StaticMask = LayoutStatic | PassiveStatic | RefStatic;
         var ReactCurrentOwner = ReactSharedInternals.ReactCurrentOwner;
@@ -7482,7 +7483,7 @@ var require_react_dom_development = __commonJS({
             }
           }
         }
-        function createElement5(type, props, rootContainerElement, parentNamespace) {
+        function createElement3(type, props, rootContainerElement, parentNamespace) {
           var isCustomComponentTag;
           var ownerDocument = getOwnerDocumentFromRootContainer(rootContainerElement);
           var domElement;
@@ -8343,7 +8344,7 @@ var require_react_dom_development = __commonJS({
             }
             parentNamespace = hostContextDev.namespace;
           }
-          var domElement = createElement5(type, props, rootContainerInstance, parentNamespace);
+          var domElement = createElement3(type, props, rootContainerInstance, parentNamespace);
           precacheFiberNode(internalInstanceHandle, domElement);
           updateFiberProps(domElement, props);
           return domElement;
@@ -10530,7 +10531,7 @@ var require_react_dom_development = __commonJS({
           }
         }
         var fakeInternalInstance = {};
-        var emptyRefsObject = new React5.Component().refs;
+        var emptyRefsObject = new React4.Component().refs;
         var didWarnAboutStateAssignmentForComponent;
         var didWarnAboutUninitializedState;
         var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -10947,7 +10948,7 @@ var require_react_dom_development = __commonJS({
             instance.state = workInProgress2.memoizedState;
           }
           if (typeof instance.componentDidMount === "function") {
-            var fiberFlags = Update;
+            var fiberFlags = Update2;
             {
               fiberFlags |= LayoutStatic;
             }
@@ -10984,7 +10985,7 @@ var require_react_dom_development = __commonJS({
           newState = workInProgress2.memoizedState;
           if (oldProps === newProps && oldState === newState && !hasContextChanged() && !checkHasForceUpdateAfterProcessing()) {
             if (typeof instance.componentDidMount === "function") {
-              var fiberFlags = Update;
+              var fiberFlags = Update2;
               {
                 fiberFlags |= LayoutStatic;
               }
@@ -11010,7 +11011,7 @@ var require_react_dom_development = __commonJS({
               }
             }
             if (typeof instance.componentDidMount === "function") {
-              var _fiberFlags = Update;
+              var _fiberFlags = Update2;
               {
                 _fiberFlags |= LayoutStatic;
               }
@@ -11021,7 +11022,7 @@ var require_react_dom_development = __commonJS({
             }
           } else {
             if (typeof instance.componentDidMount === "function") {
-              var _fiberFlags2 = Update;
+              var _fiberFlags2 = Update2;
               {
                 _fiberFlags2 |= LayoutStatic;
               }
@@ -11069,7 +11070,7 @@ var require_react_dom_development = __commonJS({
           if (unresolvedOldProps === unresolvedNewProps && oldState === newState && !hasContextChanged() && !checkHasForceUpdateAfterProcessing() && !enableLazyContextPropagation) {
             if (typeof instance.componentDidUpdate === "function") {
               if (unresolvedOldProps !== current2.memoizedProps || oldState !== current2.memoizedState) {
-                workInProgress2.flags |= Update;
+                workInProgress2.flags |= Update2;
               }
             }
             if (typeof instance.getSnapshotBeforeUpdate === "function") {
@@ -11098,7 +11099,7 @@ var require_react_dom_development = __commonJS({
               }
             }
             if (typeof instance.componentDidUpdate === "function") {
-              workInProgress2.flags |= Update;
+              workInProgress2.flags |= Update2;
             }
             if (typeof instance.getSnapshotBeforeUpdate === "function") {
               workInProgress2.flags |= Snapshot;
@@ -11106,7 +11107,7 @@ var require_react_dom_development = __commonJS({
           } else {
             if (typeof instance.componentDidUpdate === "function") {
               if (unresolvedOldProps !== current2.memoizedProps || oldState !== current2.memoizedState) {
-                workInProgress2.flags |= Update;
+                workInProgress2.flags |= Update2;
               }
             }
             if (typeof instance.getSnapshotBeforeUpdate === "function") {
@@ -11354,7 +11355,7 @@ var require_react_dom_development = __commonJS({
             }
           }
           function updateFragment2(returnFiber, current2, fragment, lanes, key) {
-            if (current2 === null || current2.tag !== Fragment2) {
+            if (current2 === null || current2.tag !== Fragment3) {
               var created = createFiberFromFragment(fragment, returnFiber.mode, lanes, key);
               created.return = returnFiber;
               return created;
@@ -11757,7 +11758,7 @@ var require_react_dom_development = __commonJS({
               if (child.key === key) {
                 var elementType = element.type;
                 if (elementType === REACT_FRAGMENT_TYPE) {
-                  if (child.tag === Fragment2) {
+                  if (child.tag === Fragment3) {
                     deleteRemainingChildren(returnFiber, child.sibling);
                     var existing = useFiber(child, element.props.children);
                     existing.return = returnFiber;
@@ -12226,9 +12227,9 @@ var require_react_dom_development = __commonJS({
         function bailoutHooks(current2, workInProgress2, lanes) {
           workInProgress2.updateQueue = current2.updateQueue;
           if ((workInProgress2.mode & StrictEffectsMode) !== NoMode) {
-            workInProgress2.flags &= ~(MountPassiveDev | MountLayoutDev | Passive | Update);
+            workInProgress2.flags &= ~(MountPassiveDev | MountLayoutDev | Passive | Update2);
           } else {
-            workInProgress2.flags &= ~(Passive | Update);
+            workInProgress2.flags &= ~(Passive | Update2);
           }
           current2.lanes = removeLanes(current2.lanes, lanes);
         }
@@ -12721,13 +12722,13 @@ var require_react_dom_development = __commonJS({
           return updateEffectImpl(Passive, Passive$1, create, deps);
         }
         function mountInsertionEffect(create, deps) {
-          return mountEffectImpl(Update, Insertion, create, deps);
+          return mountEffectImpl(Update2, Insertion, create, deps);
         }
         function updateInsertionEffect(create, deps) {
-          return updateEffectImpl(Update, Insertion, create, deps);
+          return updateEffectImpl(Update2, Insertion, create, deps);
         }
         function mountLayoutEffect(create, deps) {
-          var fiberFlags = Update;
+          var fiberFlags = Update2;
           {
             fiberFlags |= LayoutStatic;
           }
@@ -12737,7 +12738,7 @@ var require_react_dom_development = __commonJS({
           return mountEffectImpl(fiberFlags, Layout, create, deps);
         }
         function updateLayoutEffect(create, deps) {
-          return updateEffectImpl(Update, Layout, create, deps);
+          return updateEffectImpl(Update2, Layout, create, deps);
         }
         function imperativeHandleEffect(create, ref) {
           if (typeof ref === "function") {
@@ -12768,7 +12769,7 @@ var require_react_dom_development = __commonJS({
             }
           }
           var effectDeps = deps !== null && deps !== void 0 ? deps.concat([ref]) : null;
-          var fiberFlags = Update;
+          var fiberFlags = Update2;
           {
             fiberFlags |= LayoutStatic;
           }
@@ -12784,7 +12785,7 @@ var require_react_dom_development = __commonJS({
             }
           }
           var effectDeps = deps !== null && deps !== void 0 ? deps.concat([ref]) : null;
-          return updateEffectImpl(Update, Layout, imperativeHandleEffect.bind(null, create, ref), effectDeps);
+          return updateEffectImpl(Update2, Layout, imperativeHandleEffect.bind(null, create, ref), effectDeps);
         }
         function mountDebugValue(value, formatterFn) {
         }
@@ -14523,7 +14524,7 @@ var require_react_dom_development = __commonJS({
         }
         function updateProfiler(current2, workInProgress2, renderLanes2) {
           {
-            workInProgress2.flags |= Update;
+            workInProgress2.flags |= Update2;
             {
               var stateNode = workInProgress2.stateNode;
               stateNode.effectDuration = 0;
@@ -15796,7 +15797,7 @@ var require_react_dom_development = __commonJS({
               {
                 var hasChildWork = includesSomeLane(renderLanes2, workInProgress2.childLanes);
                 if (hasChildWork) {
-                  workInProgress2.flags |= Update;
+                  workInProgress2.flags |= Update2;
                 }
                 {
                   var stateNode = workInProgress2.stateNode;
@@ -15932,7 +15933,7 @@ var require_react_dom_development = __commonJS({
               var _resolvedProps2 = workInProgress2.elementType === type ? _unresolvedProps2 : resolveDefaultProps(type, _unresolvedProps2);
               return updateForwardRef(current2, workInProgress2, type, _resolvedProps2, renderLanes2);
             }
-            case Fragment2:
+            case Fragment3:
               return updateFragment(current2, workInProgress2, renderLanes2);
             case Mode:
               return updateMode(current2, workInProgress2, renderLanes2);
@@ -15985,7 +15986,7 @@ var require_react_dom_development = __commonJS({
           throw new Error("Unknown unit of work tag (" + workInProgress2.tag + "). This error is likely caused by a bug in React. Please file an issue.");
         }
         function markUpdate(workInProgress2) {
-          workInProgress2.flags |= Update;
+          workInProgress2.flags |= Update2;
         }
         function markRef$1(workInProgress2) {
           workInProgress2.flags |= Ref;
@@ -16176,7 +16177,7 @@ var require_react_dom_development = __commonJS({
               if ((workInProgress2.flags & DidCapture) === NoFlags) {
                 workInProgress2.memoizedState = null;
               }
-              workInProgress2.flags |= Update;
+              workInProgress2.flags |= Update2;
               bubbleProperties(workInProgress2);
               {
                 if ((workInProgress2.mode & ProfileMode) !== NoMode) {
@@ -16205,7 +16206,7 @@ var require_react_dom_development = __commonJS({
             case SimpleMemoComponent:
             case FunctionComponent:
             case ForwardRef:
-            case Fragment2:
+            case Fragment3:
             case Mode:
             case Profiler:
             case ContextConsumer:
@@ -16352,7 +16353,7 @@ var require_react_dom_development = __commonJS({
               }
               var wakeables = workInProgress2.updateQueue;
               if (wakeables !== null) {
-                workInProgress2.flags |= Update;
+                workInProgress2.flags |= Update2;
               }
               bubbleProperties(workInProgress2);
               {
@@ -16411,7 +16412,7 @@ var require_react_dom_development = __commonJS({
                         var newThenables = suspended.updateQueue;
                         if (newThenables !== null) {
                           workInProgress2.updateQueue = newThenables;
-                          workInProgress2.flags |= Update;
+                          workInProgress2.flags |= Update2;
                         }
                         workInProgress2.subtreeFlags = NoFlags;
                         resetChildFibers(workInProgress2, renderLanes2);
@@ -16439,7 +16440,7 @@ var require_react_dom_development = __commonJS({
                     var _newThenables = _suspended.updateQueue;
                     if (_newThenables !== null) {
                       workInProgress2.updateQueue = _newThenables;
-                      workInProgress2.flags |= Update;
+                      workInProgress2.flags |= Update2;
                     }
                     cutOffTailIfNeeded(renderState, true);
                     if (renderState.tail === null && renderState.tailMode === "hidden" && !renderedTail.alternate && !getIsHydrating()) {
@@ -16511,7 +16512,7 @@ var require_react_dom_development = __commonJS({
                 if (includesSomeLane(subtreeRenderLanes, OffscreenLane)) {
                   bubbleProperties(workInProgress2);
                   {
-                    if (workInProgress2.subtreeFlags & (Placement | Update)) {
+                    if (workInProgress2.subtreeFlags & (Placement | Update2)) {
                       workInProgress2.flags |= Visibility;
                     }
                   }
@@ -16942,7 +16943,7 @@ var require_react_dom_development = __commonJS({
         }
         function commitPassiveEffectDurations(finishedRoot, finishedWork) {
           {
-            if ((finishedWork.flags & Update) !== NoFlags) {
+            if ((finishedWork.flags & Update2) !== NoFlags) {
               switch (finishedWork.tag) {
                 case Profiler: {
                   var passiveEffectDuration = finishedWork.stateNode.passiveEffectDuration;
@@ -17000,7 +17001,7 @@ var require_react_dom_development = __commonJS({
               }
               case ClassComponent: {
                 var instance = finishedWork.stateNode;
-                if (finishedWork.flags & Update) {
+                if (finishedWork.flags & Update2) {
                   if (!offscreenSubtreeWasHidden) {
                     if (current2 === null) {
                       {
@@ -17085,7 +17086,7 @@ var require_react_dom_development = __commonJS({
               }
               case HostComponent: {
                 var _instance2 = finishedWork.stateNode;
-                if (current2 === null && finishedWork.flags & Update) {
+                if (current2 === null && finishedWork.flags & Update2) {
                   var type = finishedWork.type;
                   var props = finishedWork.memoizedProps;
                   commitMount(_instance2, type, props);
@@ -17693,7 +17694,7 @@ var require_react_dom_development = __commonJS({
             case SimpleMemoComponent: {
               recursivelyTraverseMutationEffects(root2, finishedWork);
               commitReconciliationEffects(finishedWork);
-              if (flags & Update) {
+              if (flags & Update2) {
                 try {
                   commitHookEffectListUnmount(Insertion | HasEffect, finishedWork, finishedWork.return);
                   commitHookEffectListMount(Insertion | HasEffect, finishedWork);
@@ -17745,7 +17746,7 @@ var require_react_dom_development = __commonJS({
                     captureCommitPhaseError(finishedWork, finishedWork.return, error2);
                   }
                 }
-                if (flags & Update) {
+                if (flags & Update2) {
                   var _instance4 = finishedWork.stateNode;
                   if (_instance4 != null) {
                     var newProps = finishedWork.memoizedProps;
@@ -17768,7 +17769,7 @@ var require_react_dom_development = __commonJS({
             case HostText: {
               recursivelyTraverseMutationEffects(root2, finishedWork);
               commitReconciliationEffects(finishedWork);
-              if (flags & Update) {
+              if (flags & Update2) {
                 {
                   if (finishedWork.stateNode === null) {
                     throw new Error("This should have a text node initialized. This error is likely caused by a bug in React. Please file an issue.");
@@ -17788,7 +17789,7 @@ var require_react_dom_development = __commonJS({
             case HostRoot: {
               recursivelyTraverseMutationEffects(root2, finishedWork);
               commitReconciliationEffects(finishedWork);
-              if (flags & Update) {
+              if (flags & Update2) {
                 {
                   if (current2 !== null) {
                     var prevRootState = current2.memoizedState;
@@ -17825,7 +17826,7 @@ var require_react_dom_development = __commonJS({
                   }
                 }
               }
-              if (flags & Update) {
+              if (flags & Update2) {
                 try {
                   commitSuspenseCallback(finishedWork);
                 } catch (error2) {
@@ -17879,7 +17880,7 @@ var require_react_dom_development = __commonJS({
             case SuspenseListComponent: {
               recursivelyTraverseMutationEffects(root2, finishedWork);
               commitReconciliationEffects(finishedWork);
-              if (flags & Update) {
+              if (flags & Update2) {
                 attachSuspenseRetryListeners(finishedWork);
               }
               return;
@@ -20464,7 +20465,7 @@ var require_react_dom_development = __commonJS({
           return fiber;
         }
         function createFiberFromFragment(elements, mode, lanes, key) {
-          var fiber = createFiber(Fragment2, elements, key, mode);
+          var fiber = createFiber(Fragment3, elements, key, mode);
           fiber.lanes = lanes;
           return fiber;
         }
@@ -21602,7 +21603,7 @@ var require_client = __commonJS({
 });
 
 // src/index.tsx
-var React4 = __toESM(require_react());
+var import_react2 = __toESM(require_react());
 var import_client = __toESM(require_client());
 
 // src/pages/Root.tsx
@@ -21630,39 +21631,11 @@ function _extends() {
   return _extends.apply(this, arguments);
 }
 var Action;
-(function(Action2) {
-  Action2["Pop"] = "POP";
-  Action2["Push"] = "PUSH";
-  Action2["Replace"] = "REPLACE";
+(function(Action3) {
+  Action3["Pop"] = "POP";
+  Action3["Push"] = "PUSH";
+  Action3["Replace"] = "REPLACE";
 })(Action || (Action = {}));
-var PopStateEventType = "popstate";
-function createBrowserHistory(options) {
-  if (options === void 0) {
-    options = {};
-  }
-  function createBrowserLocation(window2, globalHistory) {
-    let {
-      pathname,
-      search,
-      hash
-    } = window2.location;
-    return createLocation(
-      "",
-      {
-        pathname,
-        search,
-        hash
-      },
-      // state defaults to `null` because `window.history.state` does
-      globalHistory.state && globalHistory.state.usr || null,
-      globalHistory.state && globalHistory.state.key || "default"
-    );
-  }
-  function createBrowserHref(window2, to) {
-    return typeof to === "string" ? to : createPath(to);
-  }
-  return getUrlBasedHistory(createBrowserLocation, createBrowserHref, null, options);
-}
 function invariant(value, message) {
   if (value === false || value === null || typeof value === "undefined") {
     throw new Error(message);
@@ -21677,34 +21650,6 @@ function warning(cond, message) {
     } catch (e) {
     }
   }
-}
-function createKey() {
-  return Math.random().toString(36).substr(2, 8);
-}
-function getHistoryState(location, index) {
-  return {
-    usr: location.state,
-    key: location.key,
-    idx: index
-  };
-}
-function createLocation(current, to, state, key) {
-  if (state === void 0) {
-    state = null;
-  }
-  let location = _extends({
-    pathname: typeof current === "string" ? current : current.pathname,
-    search: "",
-    hash: ""
-  }, typeof to === "string" ? parsePath(to) : to, {
-    state,
-    // TODO: This could be cleaned up.  push/replace should probably just take
-    // full Locations now and avoid the need to run through this flow at all
-    // But that's a pretty big refactor to the current test suite so going to
-    // keep as is for the time being and just let any incoming keys take precedence
-    key: to && to.key || key || createKey()
-  });
-  return location;
 }
 function createPath(_ref) {
   let {
@@ -21736,125 +21681,6 @@ function parsePath(path) {
     }
   }
   return parsedPath;
-}
-function getUrlBasedHistory(getLocation, createHref, validateLocation, options) {
-  if (options === void 0) {
-    options = {};
-  }
-  let {
-    window: window2 = document.defaultView,
-    v5Compat = false
-  } = options;
-  let globalHistory = window2.history;
-  let action = Action.Pop;
-  let listener = null;
-  let index = getIndex();
-  if (index == null) {
-    index = 0;
-    globalHistory.replaceState(_extends({}, globalHistory.state, {
-      idx: index
-    }), "");
-  }
-  function getIndex() {
-    let state = globalHistory.state || {
-      idx: null
-    };
-    return state.idx;
-  }
-  function handlePop() {
-    action = Action.Pop;
-    let nextIndex = getIndex();
-    let delta = nextIndex == null ? null : nextIndex - index;
-    index = nextIndex;
-    if (listener) {
-      listener({
-        action,
-        location: history.location,
-        delta
-      });
-    }
-  }
-  function push(to, state) {
-    action = Action.Push;
-    let location = createLocation(history.location, to, state);
-    if (validateLocation)
-      validateLocation(location, to);
-    index = getIndex() + 1;
-    let historyState = getHistoryState(location, index);
-    let url = history.createHref(location);
-    try {
-      globalHistory.pushState(historyState, "", url);
-    } catch (error) {
-      window2.location.assign(url);
-    }
-    if (v5Compat && listener) {
-      listener({
-        action,
-        location: history.location,
-        delta: 1
-      });
-    }
-  }
-  function replace(to, state) {
-    action = Action.Replace;
-    let location = createLocation(history.location, to, state);
-    if (validateLocation)
-      validateLocation(location, to);
-    index = getIndex();
-    let historyState = getHistoryState(location, index);
-    let url = history.createHref(location);
-    globalHistory.replaceState(historyState, "", url);
-    if (v5Compat && listener) {
-      listener({
-        action,
-        location: history.location,
-        delta: 0
-      });
-    }
-  }
-  function createURL(to) {
-    let base = window2.location.origin !== "null" ? window2.location.origin : window2.location.href;
-    let href = typeof to === "string" ? to : createPath(to);
-    invariant(base, "No window.location.(origin|href) available to create URL for href: " + href);
-    return new URL(href, base);
-  }
-  let history = {
-    get action() {
-      return action;
-    },
-    get location() {
-      return getLocation(window2, globalHistory);
-    },
-    listen(fn) {
-      if (listener) {
-        throw new Error("A history only accepts one active listener");
-      }
-      window2.addEventListener(PopStateEventType, handlePop);
-      listener = fn;
-      return () => {
-        window2.removeEventListener(PopStateEventType, handlePop);
-        listener = null;
-      };
-    },
-    createHref(to) {
-      return createHref(window2, to);
-    },
-    createURL,
-    encodeLocation(to) {
-      let url = createURL(to);
-      return {
-        pathname: url.pathname,
-        search: url.search,
-        hash: url.hash
-      };
-    },
-    push,
-    replace,
-    go(n) {
-      return globalHistory.go(n);
-    }
-  };
-  return history;
 }
 var ResultType;
 (function(ResultType2) {
@@ -22922,33 +22748,6 @@ function getFormSubmissionInfo(target, options, basename) {
 var _excluded = ["onClick", "relative", "reloadDocument", "replace", "state", "target", "to", "preventScrollReset"];
 var _excluded2 = ["aria-current", "caseSensitive", "className", "end", "style", "to", "children"];
 var _excluded3 = ["reloadDocument", "replace", "method", "action", "onSubmit", "fetcherKey", "routeId", "relative", "preventScrollReset"];
-function BrowserRouter(_ref) {
-  let {
-    basename,
-    children,
-    window: window2
-  } = _ref;
-  let historyRef = React2.useRef();
-  if (historyRef.current == null) {
-    historyRef.current = createBrowserHistory({
-      window: window2,
-      v5Compat: true
-    });
-  }
-  let history = historyRef.current;
-  let [state, setState] = React2.useState({
-    action: history.action,
-    location: history.location
-  });
-  React2.useLayoutEffect(() => history.listen(setState), [history]);
-  return /* @__PURE__ */ React2.createElement(Router, {
-    basename,
-    children,
-    location: state.location,
-    navigationType: state.action,
-    navigator: history
-  });
-}
 function HistoryRouter(_ref3) {
   let {
     basename,
@@ -23356,23 +23155,340 @@ function usePageHide(callback, options) {
   }, [callback, capture]);
 }
 
+// src/components/SuspenseRouter.tsx
+var import_react = __toESM(require_react());
+
+// node_modules/@babel/runtime/helpers/esm/extends.js
+function _extends4() {
+  _extends4 = Object.assign ? Object.assign.bind() : function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends4.apply(this, arguments);
+}
+
+// node_modules/history/index.js
+var Action2;
+(function(Action3) {
+  Action3["Pop"] = "POP";
+  Action3["Push"] = "PUSH";
+  Action3["Replace"] = "REPLACE";
+})(Action2 || (Action2 = {}));
+var readOnly = true ? function(obj) {
+  return Object.freeze(obj);
+} : function(obj) {
+  return obj;
+};
+function warning2(cond, message) {
+  if (!cond) {
+    if (typeof console !== "undefined")
+      console.warn(message);
+    try {
+      throw new Error(message);
+    } catch (e) {
+    }
+  }
+}
+var BeforeUnloadEventType = "beforeunload";
+var PopStateEventType = "popstate";
+function createBrowserHistory2(options) {
+  if (options === void 0) {
+    options = {};
+  }
+  var _options = options, _options$window = _options.window, window2 = _options$window === void 0 ? document.defaultView : _options$window;
+  var globalHistory = window2.history;
+  function getIndexAndLocation() {
+    var _window$location = window2.location, pathname = _window$location.pathname, search = _window$location.search, hash = _window$location.hash;
+    var state = globalHistory.state || {};
+    return [state.idx, readOnly({
+      pathname,
+      search,
+      hash,
+      state: state.usr || null,
+      key: state.key || "default"
+    })];
+  }
+  var blockedPopTx = null;
+  function handlePop() {
+    if (blockedPopTx) {
+      blockers.call(blockedPopTx);
+      blockedPopTx = null;
+    } else {
+      var nextAction = Action2.Pop;
+      var _getIndexAndLocation = getIndexAndLocation(), nextIndex = _getIndexAndLocation[0], nextLocation = _getIndexAndLocation[1];
+      if (blockers.length) {
+        if (nextIndex != null) {
+          var delta = index - nextIndex;
+          if (delta) {
+            blockedPopTx = {
+              action: nextAction,
+              location: nextLocation,
+              retry: function retry() {
+                go(delta * -1);
+              }
+            };
+            go(delta);
+          }
+        } else {
+          true ? warning2(
+            false,
+            // TODO: Write up a doc that explains our blocking strategy in
+            // detail and link to it here so people can understand better what
+            // is going on and how to avoid it.
+            "You are trying to block a POP navigation to a location that was not created by the history library. The block will fail silently in production, but in general you should do all navigation with the history library (instead of using window.history.pushState directly) to avoid this situation."
+          ) : void 0;
+        }
+      } else {
+        applyTx(nextAction);
+      }
+    }
+  }
+  window2.addEventListener(PopStateEventType, handlePop);
+  var action = Action2.Pop;
+  var _getIndexAndLocation2 = getIndexAndLocation(), index = _getIndexAndLocation2[0], location = _getIndexAndLocation2[1];
+  var listeners = createEvents();
+  var blockers = createEvents();
+  if (index == null) {
+    index = 0;
+    globalHistory.replaceState(_extends4({}, globalHistory.state, {
+      idx: index
+    }), "");
+  }
+  function createHref(to) {
+    return typeof to === "string" ? to : createPath2(to);
+  }
+  function getNextLocation(to, state) {
+    if (state === void 0) {
+      state = null;
+    }
+    return readOnly(_extends4({
+      pathname: location.pathname,
+      hash: "",
+      search: ""
+    }, typeof to === "string" ? parsePath2(to) : to, {
+      state,
+      key: createKey()
+    }));
+  }
+  function getHistoryStateAndUrl(nextLocation, index2) {
+    return [{
+      usr: nextLocation.state,
+      key: nextLocation.key,
+      idx: index2
+    }, createHref(nextLocation)];
+  }
+  function allowTx(action2, location2, retry) {
+    return !blockers.length || (blockers.call({
+      action: action2,
+      location: location2,
+      retry
+    }), false);
+  }
+  function applyTx(nextAction) {
+    action = nextAction;
+    var _getIndexAndLocation3 = getIndexAndLocation();
+    index = _getIndexAndLocation3[0];
+    location = _getIndexAndLocation3[1];
+    listeners.call({
+      action,
+      location
+    });
+  }
+  function push(to, state) {
+    var nextAction = Action2.Push;
+    var nextLocation = getNextLocation(to, state);
+    function retry() {
+      push(to, state);
+    }
+    if (allowTx(nextAction, nextLocation, retry)) {
+      var _getHistoryStateAndUr = getHistoryStateAndUrl(nextLocation, index + 1), historyState = _getHistoryStateAndUr[0], url = _getHistoryStateAndUr[1];
+      try {
+        globalHistory.pushState(historyState, "", url);
+      } catch (error) {
+        window2.location.assign(url);
+      }
+      applyTx(nextAction);
+    }
+  }
+  function replace(to, state) {
+    var nextAction = Action2.Replace;
+    var nextLocation = getNextLocation(to, state);
+    function retry() {
+      replace(to, state);
+    }
+    if (allowTx(nextAction, nextLocation, retry)) {
+      var _getHistoryStateAndUr2 = getHistoryStateAndUrl(nextLocation, index), historyState = _getHistoryStateAndUr2[0], url = _getHistoryStateAndUr2[1];
+      globalHistory.replaceState(historyState, "", url);
+      applyTx(nextAction);
+    }
+  }
+  function go(delta) {
+    globalHistory.go(delta);
+  }
+  var history = {
+    get action() {
+      return action;
+    },
+    get location() {
+      return location;
+    },
+    createHref,
+    push,
+    replace,
+    go,
+    back: function back() {
+      go(-1);
+    },
+    forward: function forward() {
+      go(1);
+    },
+    listen: function listen(listener) {
+      return listeners.push(listener);
+    },
+    block: function block(blocker) {
+      var unblock = blockers.push(blocker);
+      if (blockers.length === 1) {
+        window2.addEventListener(BeforeUnloadEventType, promptBeforeUnload);
+      }
+      return function() {
+        unblock();
+        if (!blockers.length) {
+          window2.removeEventListener(BeforeUnloadEventType, promptBeforeUnload);
+        }
+      };
+    }
+  };
+  return history;
+}
+function promptBeforeUnload(event) {
+  event.preventDefault();
+  event.returnValue = "";
+}
+function createEvents() {
+  var handlers = [];
+  return {
+    get length() {
+      return handlers.length;
+    },
+    push: function push(fn) {
+      handlers.push(fn);
+      return function() {
+        handlers = handlers.filter(function(handler) {
+          return handler !== fn;
+        });
+      };
+    },
+    call: function call(arg) {
+      handlers.forEach(function(fn) {
+        return fn && fn(arg);
+      });
+    }
+  };
+}
+function createKey() {
+  return Math.random().toString(36).substr(2, 8);
+}
+function createPath2(_ref) {
+  var _ref$pathname = _ref.pathname, pathname = _ref$pathname === void 0 ? "/" : _ref$pathname, _ref$search = _ref.search, search = _ref$search === void 0 ? "" : _ref$search, _ref$hash = _ref.hash, hash = _ref$hash === void 0 ? "" : _ref$hash;
+  if (search && search !== "?")
+    pathname += search.charAt(0) === "?" ? search : "?" + search;
+  if (hash && hash !== "#")
+    pathname += hash.charAt(0) === "#" ? hash : "#" + hash;
+  return pathname;
+}
+function parsePath2(path) {
+  var parsedPath = {};
+  if (path) {
+    var hashIndex = path.indexOf("#");
+    if (hashIndex >= 0) {
+      parsedPath.hash = path.substr(hashIndex);
+      path = path.substr(0, hashIndex);
+    }
+    var searchIndex = path.indexOf("?");
+    if (searchIndex >= 0) {
+      parsedPath.search = path.substr(searchIndex);
+      path = path.substr(0, searchIndex);
+    }
+    if (path) {
+      parsedPath.pathname = path;
+    }
+  }
+  return parsedPath;
+}
+
+// src/components/SuspenseRouter.tsx
+var import_jsx_runtime = __toESM(require_jsx_runtime());
+var SuspenseRouter = (props) => {
+  const { basename, children, window: window2 } = props;
+  const historyRef = (0, import_react.useRef)();
+  const [isPending, startTransition] = (0, import_react.useTransition)();
+  if (!historyRef.current) {
+    historyRef.current = createBrowserHistory2({ window: window2 });
+  }
+  const history = historyRef.current;
+  const [state, setState] = (0, import_react.useState)({
+    action: history.action,
+    location: history.location
+  });
+  function setStateAsync(update) {
+    startTransition(() => {
+      setState(update);
+    });
+  }
+  (0, import_react.useLayoutEffect)(() => history.listen(setStateAsync), [history]);
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+    Router,
+    {
+      ...{ basename },
+      location: state.location,
+      navigationType: state.action,
+      navigator: history,
+      children: children?.({ isPending }) || null
+    }
+  );
+};
+
 // src/pages/Root.tsx
+var import_jsx_runtime2 = __toESM(require_jsx_runtime());
 var Contact = React3.lazy(
-  () => import("./Contact-OZHX7U6D.mjs").then((r) => ({ default: r.Page }))
+  () => import("./Contact-LCWIGR77.mjs").then((r) => ({ default: r.Page }))
 );
 var Welcome = React3.lazy(
-  () => import("./Welcome-DUCVRKMH.mjs").then((r) => ({ default: r.Page }))
+  () => import("./Welcome-SNDXWDY3.mjs").then((r) => ({ default: r.Page }))
 );
-var Root = () => /* @__PURE__ */ React3.createElement("div", null, /* @__PURE__ */ React3.createElement("h1", null, "Hello! ", Date.now()), /* @__PURE__ */ React3.createElement(React3.Suspense, { fallback: /* @__PURE__ */ React3.createElement("div", null, "Loading...") }, /* @__PURE__ */ React3.createElement(BrowserRouter, null, /* @__PURE__ */ React3.createElement("nav", null, /* @__PURE__ */ React3.createElement(Link, { to: "/" }, "Welcome"), /* @__PURE__ */ React3.createElement(Link, { to: "/contact" }, "Contact")), /* @__PURE__ */ React3.createElement(Routes, null, /* @__PURE__ */ React3.createElement(Route, { index: true, element: /* @__PURE__ */ React3.createElement(Welcome, null) }), /* @__PURE__ */ React3.createElement(Route, { path: "/contact", element: /* @__PURE__ */ React3.createElement(Contact, null) })))));
+var Root = () => /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(React3.Suspense, { fallback: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { children: "Loading Root..." }), children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(SuspenseRouter, { children: (options) => {
+  const { isPending } = options;
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(import_jsx_runtime2.Fragment, { children: [
+    isPending && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { children: "Pending..." }),
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(React3.Suspense, { fallback: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { children: "Loading Route in Root..." }), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("nav", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { to: "/", children: "Welcome" }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { to: "/contact", children: "Contact" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(Routes, { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Route, { index: true, element: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Welcome, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Route, { path: "/contact", element: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Contact, {}) })
+      ] })
+    ] })
+  ] });
+} }) });
 
 // src/index.tsx
+var import_jsx_runtime3 = __toESM(require_jsx_runtime());
 function App() {
-  return /* @__PURE__ */ React4.createElement(React4.StrictMode, null, /* @__PURE__ */ React4.createElement(React4.Suspense, { fallback: /* @__PURE__ */ React4.createElement("div", null, "Loading...") }, /* @__PURE__ */ React4.createElement(Root, null)));
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react2.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_react2.Suspense, { fallback: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { children: "Loading Root..." }), children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Root, {}) }) });
 }
 var rootDOM = document.getElementById("root");
 if (rootDOM) {
   const root = (0, import_client.createRoot)(rootDOM);
-  root.render(/* @__PURE__ */ React4.createElement(App, null));
+  root.render(/* @__PURE__ */ (0, import_jsx_runtime3.jsx)(App, {}));
 } else {
   alert("missing root element!");
   console.error("missing root element!");
@@ -23450,4 +23566,3 @@ react-router-dom/dist/index.js:
    * @license MIT
    *)
 */
-//# sourceMappingURL=index.mjs.map

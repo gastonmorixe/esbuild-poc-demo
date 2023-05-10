@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../src/pages/Contact.tsx", "../src/components/Button.tsx", "../src/components/Tabs.tsx"],
-  "sourcesContent": ["import * as React from \"react\"\n\nimport { Button } from \"../components\"\n\nexport const Page = () => (\n  <div>\n    <h1>Home</h1>\n    <p>This is a contact page example random text in spanish hola mundo</p>\n    <section>\n      <form>\n        <input type=\"text\" name=\"name\" />\n        <input type=\"text\" name=\"email\" />\n        <input type=\"text\" name=\"message\" />\n        <Button>Submit</Button>\n      </form>\n    </section>\n  </div>\n)\n", "import * as React from \"react\"\n\nexport const Button: React.FC<React.PropsWithChildren> = (props) => (\n  <button>{props.children}</button>\n)\n", "import * as React from \"react\"\n\nexport const Tabs = () => <div>Tabs</div>\n"],
-  "mappings": ";;;;;;AAAA,IAAAA,SAAuB;;;ACAvB,YAAuB;AAEhB,IAAM,SAA4C,CAAC,UACxD,oCAAC,gBAAQ,MAAM,QAAS;;;ACH1B,IAAAC,SAAuB;;;AFIhB,IAAM,OAAO,MAClB,qCAAC,aACC,qCAAC,YAAG,MAAI,GACR,qCAAC,WAAE,kEAAgE,GACnE,qCAAC,iBACC,qCAAC,cACC,qCAAC,WAAM,MAAK,QAAO,MAAK,QAAO,GAC/B,qCAAC,WAAM,MAAK,QAAO,MAAK,SAAQ,GAChC,qCAAC,WAAM,MAAK,QAAO,MAAK,WAAU,GAClC,qCAAC,cAAO,QAAM,CAChB,CACF,CACF;",
-  "names": ["React", "React"]
-}

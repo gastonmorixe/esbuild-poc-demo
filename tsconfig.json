@@ -4,13 +4,14 @@
     "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "commonjs",
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "nodenext",
+    "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-    "useDefineForClassFields": false,
-    "skipLibCheck": true,
-    "jsx": "react",
-    "isolatedModules": true
+    "useDefineForClassFields": false
   },
   "exclude": ["node_modules", "dist", "**/*.test.ts"]
 }

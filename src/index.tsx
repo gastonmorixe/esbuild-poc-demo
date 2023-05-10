@@ -1,15 +1,15 @@
-import * as React from "react"
+import { StrictMode, Suspense } from "react"
 import { createRoot } from "react-dom/client"
 
 import { Root } from "./pages/Root"
 
 function App() {
   return (
-    <React.StrictMode>
-      <React.Suspense fallback={<div>Loading...</div>}>
+    <StrictMode>
+      <Suspense fallback={<div>Loading Root...</div>}>
         <Root />
-      </React.Suspense>
-    </React.StrictMode>
+      </Suspense>
+    </StrictMode>
   )
 }
 

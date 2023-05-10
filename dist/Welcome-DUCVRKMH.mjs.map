@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../src/pages/Welcome.tsx"],
-  "sourcesContent": ["import * as React from \"react\"\n\nexport const Page = () => (\n  <div>\n    <p>\n      Welcome: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui\n      commodi laudantium eaque veritatis vitae cum, earum voluptatum dolores\n      quas vero repudiandae harum reiciendis nostrum deleniti quo sed error\n      corporis pariatur?\n    </p>\n  </div>\n)\n"],
-  "mappings": ";;;;;;AAAA,YAAuB;AAEhB,IAAM,OAAO,MAClB,oCAAC,aACC,oCAAC,WAAE,uOAKH,CACF;",
-  "names": []
-}
